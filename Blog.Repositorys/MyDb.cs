@@ -10,6 +10,8 @@ namespace Blog.Repositorys
         {
             optionsBuilder.UseMySql("server=wdora.com;uid=root;pwd=123123;database=blogDb;");
         }
-        public DbSet<User> User;
+
+        public DbSet<User> Users { get; set; }
+        public DbSet<Blogs> Blogs { get; set; }
     }
 }

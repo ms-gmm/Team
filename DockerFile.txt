@@ -1,0 +1,11 @@
+# 父镜像
+FROM microsoft/aspnetcore
+# 设置工作目录
+WORKDIR /app
+ENV ASPNETCORE_URLS http://*:5000
+# 复制发布文件到/app下
+COPY ./publish /app
+# 设置端口 对外暴露的端口
+EXPOSE 5000
+# 使用dotnet Lails.Server.Demo.dll来运行ASP.NET Core项目，注意大小写
+ENTRYPOINT ["dotnet", "Blog.Web.dll"]

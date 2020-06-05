@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Blog.Web.Migrations
+namespace Blog.Repositorys.Migrations
 {
-    public partial class dwf : Migration
+    public partial class sw : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -18,7 +18,8 @@ namespace Blog.Web.Migrations
                     Prasie = table.Column<int>(nullable: false),
                     Comments = table.Column<string>(nullable: true),
                     MyProperty = table.Column<int>(nullable: false),
-                    UserId = table.Column<int>(nullable: false)
+                    UserId = table.Column<int>(nullable: false),
+                    Shou = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
