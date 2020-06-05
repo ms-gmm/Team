@@ -27,8 +27,8 @@ namespace Blog
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //c=>c.MigrationsAssembly("Blog")
-            //services.AddDbContext<BlogDb>(builder => builder.UseMySql(Configuration.GetConnectionString("mysql")));
+            //c => c.MigrationsAssembly("Blog")
+            services.AddDbContext<BlogDb>(builder => builder.UseMySql(Configuration.GetConnectionString("mysql")));
             services.AddControllers();
         }
 

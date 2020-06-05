@@ -9,5 +9,8 @@ namespace Blog.Core
         public string Name { get; set; }
 
         public string Education { get; set; }
+
+        public string Email { get; set; }
+
     }
 }

@@ -22,8 +22,10 @@ namespace Blog.Core
 
         public int UserId { get; set; }
 
-        [ForeignKey("UserId")]
+        //[ForeignKey("UserId")]
 
-        public virtual User User { get; set; }
+        //public virtual User User { get; set; }
+
+        public int Shou { get; set; }
     }
 }
